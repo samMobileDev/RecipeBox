@@ -1,0 +1,79 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.github.com/tools"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1.5dp"
+    app:strokeColor="#ff5e2c"
+    android:backgroundTint="#fff6c0"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/recipeImage"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:scaleType="centerCrop"
+            app:cornerSizeTopLeft="10dp"
+            app:cornerSizeBottomLeft="10dp"
+            app:cornerSizeTopRight="10dp"
+            app:cornerSizeBottomRight="10dp"
+            app:shapeAppearanceOverlay="@style/RoundedImage"
+            app:strokeColor="#ff5e2c"
+            app:strokeWidth="1.5dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="4dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/recipeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#556B2F"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="classic" />
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="4dp"
+            app:srcCompat="@drawable/ic_chevron_right"
+            android:rotation="180"
+            app:tint="#556B2F"
+            tools:ignore="PrivateResource"
+            tools2:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
